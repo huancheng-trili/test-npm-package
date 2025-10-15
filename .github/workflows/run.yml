@@ -1,0 +1,24 @@
+name: Run
+
+on:
+  workflow_dispatch:
+
+permissions:
+  id-token: write # Required for OIDC
+
+jobs:
+  publish-to-npm:
+    name: Publish to NPM
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/setup-node@v6
+        with:
+          node-version: "22.x"
+          registry-url: "https://registry.npmjs.org"
+      - name: Update npm # npm 11.5.1 or later is required for trusted publishing
+        run: npm install -g npm@latest
+      - name: Publish
+        shell: bash
+        run: |
+          cd pkg
+          npm publish --provenance --access public
