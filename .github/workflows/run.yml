@@ -22,4 +22,4 @@ jobs:
         shell: bash
         run: |
           cd pkg
-          npm publish --provenance --access public --verbose --tag "$(jq -r '.version' package.json)"
+          npm publish --provenance --access public --verbose --tag latest
