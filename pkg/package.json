@@ -7,7 +7,7 @@
   "version": "0.1.1-alpha.1",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jstz-dev/jstz"
+    "url": "https://github.com/huancheng-trili/test-npm-package"
   },
   "files": [
     "jstz_sdk_bg.wasm",
