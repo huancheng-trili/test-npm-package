@@ -1,10 +1,10 @@
 {
-  "name": "@huancheng-trili/test_jstz_sdk",
+  "name": "@huancheng-trili/test_jstz_sdk3",
   "type": "module",
   "collaborators": [
     "TriliTech <contact@trili.tech>"
   ],
-  "version": "0.1.1-alpha.1",
+  "version": "0.1.1-alpha.2",
   "repository": {
     "type": "git",
     "url": "https://github.com/huancheng-trili/test-npm-package"
